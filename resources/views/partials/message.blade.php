@@ -1,0 +1,1 @@
+@error($input)<div class="text-xs text-red-500"> {{ $message }} </div>@enderror

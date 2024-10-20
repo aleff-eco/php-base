@@ -1,0 +1,9 @@
+@extends('layouts.admin')
+@section('content')
+    @switch($section)
+        @case(1)
+            @livewire('admin.dashboard')
+        @break
+        @default
+    @endswitch
+@endsection

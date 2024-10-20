@@ -1,0 +1,1 @@
+<p class="mb-2 text-xs text-red-500">Campos requeridos @include('partials.required')</p>
