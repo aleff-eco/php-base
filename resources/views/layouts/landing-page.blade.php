@@ -34,6 +34,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">    
 
+
+    {{-- produccion --}}
+    {{-- @php
+        $cwd = getcwd();
+        $cssName = basename(glob($cwd . '/build/assets/*.css')[0], '.css');
+        $jsName = basename(glob($cwd . '/build/assets/*.js')[0], '.js');
+        $css = asset('build/assets/' . $cssName . '.css');
+        $js = asset('build/assets/' . $jsName . '.js');
+    @endphp
+    <link rel="stylesheet" href="{{ $css }}" id="css">
+    <script src="{{ $js }}" id="js"></script> --}}
+
+    
     {{-- test --}}
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
